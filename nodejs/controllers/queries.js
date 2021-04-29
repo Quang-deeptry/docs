@@ -7,4 +7,7 @@ const getPosts = modelPosts.find(objectData).populate({
   select: "category"
 });
 
-
+// dem so luong bai viet cua bang Post
+BlogPost.countDocuments(conditionFind);
+// lam tron so le 1.8 => 2, 1.4 => 1
+Match.ceil();
