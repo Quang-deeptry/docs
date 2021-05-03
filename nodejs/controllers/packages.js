@@ -11,3 +11,5 @@
 // la khi ta dung phuong thuc method=POST ghi de "DELETE" o phia action action="/response?_method=DELETE";
 // serve-favicon => dat favicon lam anh dai dien cho website tren muc tieu de 
 // app.use('/', favicon('./src/public/favicon.ico'));
+// flash trong nodejs la phan hien thi mot doan thong bao den nguoi dung => sau khi hien thi mot khoang thoi gian nhat dinh thong bao se tu dong xoa
+
