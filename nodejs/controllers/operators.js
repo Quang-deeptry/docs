@@ -22,5 +22,5 @@ if(!!a) return console.log("oh a");
 // hoac nhu the nay
 const a = 0;
 if(a ? true : false) return console.log("oh a");
-
-
+// lam tron so le 1.8 => 2, 1.4 => 1
+Match.ceil();
