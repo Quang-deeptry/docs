@@ -6,6 +6,9 @@ ObjectId.isValid(id)
 var checkForHexRegExp = new RegExp("^[0-9a-fA-F]{24}$");
 checkForHexRegExp(id);
 
+// regex phone number (+33 france)
+matches(/^((\+)33|0)[1-9](\d{2}){4}$/, 'g')
+
 // express-validation
 // check(ten thuoc tinh trong bang)
 module.exports = {
