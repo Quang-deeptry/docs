@@ -1,0 +1,1 @@
+compose => 'thằng này là 1 (tiện ích) lập trình chức năng => chưa rõ sâu về nó nhưng chỉ hiểu nó là 1 chức năng dùng để soạn thảo. Kết hợp giữa applymiddleware vs reduxDevtools...'
