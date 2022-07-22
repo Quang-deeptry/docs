@@ -63,3 +63,30 @@ const getPosts = modelPosts.find(objectData).populate({
 
 // get modelPosts co _id: 1 va lay _id cua bang categories
 const getPost = modelPosts.find({_id: 1}).populate('categories', '_id');
+
+
+// mongoose lấy dữ liệu từ bảng khác có thuộc tính bằng thuộc tính của model hiện tại
+// let: { comment: '$comment' } => giá trị không thay đổi
+Product.aggregate([
+  {
+    $lookup: {
+      from: 'comments',
+      localField: 'user',
+      foreignField: '_id',
+      as: 'comments',
+    },
+  },  
+])
+// hoặc 
+Product.aggregate([
+  {
+    $lookup: {
+      from: 'comments',
+      as: 'comments',
+      let: { comment: '$comment' },
+      pipeline: [
+        { $match: { $expr: { $in: ['$_id', '$$comment'] } } },
+      ],
+    },
+  },
+])

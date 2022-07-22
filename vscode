@@ -1,7 +1,2 @@
-https://stackoverflow.com/questions/5788037/recover-from-git-reset-hard help when git reset hard
-git fsck --lost-found
-git show <filename>
---
-
-
-convert lf by crlf
+<!-- chuyển từ crlf sang lf -->
+  git config core.autocrlf false
